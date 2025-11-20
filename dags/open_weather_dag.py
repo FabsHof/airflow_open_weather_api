@@ -121,6 +121,9 @@ def open_weather_dag():
         cleaned_data = combine_and_transform(chunk_size=20)
         df = pd.DataFrame(cleaned_data)
         output_file = '/app/clean_data/data.csv'
+        # Remove file if it exists
+        if os.path.exists(output_file):
+            os.remove(output_file)
         df.to_csv(output_file, index=False)
 
     @task(trigger_rule='all_done')
