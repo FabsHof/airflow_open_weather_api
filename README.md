@@ -8,13 +8,22 @@
 
 ## Setup
 
-1. synchronize the environment:
-   ```bash
-   uv sync
-   ```
-2. activate the environment:
-   ```bash
-   uv activate
-   ```
+Run the `airflow-setup` target in the Makefile to set up the environment:
+
+```bash
+make airflow-setup
+```
 
 ## Development
+
+After setting up the environment, you can start the Airflow services using Docker Compose:
+
+```bash
+docker-compose up -d
+```
+
+Clean up data, logs and models directories:
+
+```bash
+make cleanup
+```

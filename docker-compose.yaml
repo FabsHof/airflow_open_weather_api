@@ -81,6 +81,7 @@ x-airflow-common:
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
     - ${AIRFLOW_PROJ_DIR:-.}/data/raw_files:/app/raw_files
     - ${AIRFLOW_PROJ_DIR:-.}/data/clean_data:/app/clean_data
+    - ${AIRFLOW_PROJ_DIR:-.}/models:/app/models
 
   user: "${AIRFLOW_UID:-50000}:0"
   depends_on:

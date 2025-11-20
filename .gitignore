@@ -218,3 +218,5 @@ __marimo__/
 # Custom
 .history/
 data/
+logs/
+models/
