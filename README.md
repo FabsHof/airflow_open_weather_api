@@ -6,7 +6,7 @@
 
 1. install [UV](https://docs.astral.sh/uv/getting-started/installation/).
 2. install [Docker](https://docs.docker.com/get-docker/).
-3. setup airflow `make airflow-setup`.
+3. create the file `.env` and fill in the Open Weather Map API key in `OPEN_WEATHER_API_KEY`.
 
 ## Setup
 
