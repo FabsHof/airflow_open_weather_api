@@ -1,5 +1,7 @@
 # Airflow Open Weather API
 
+![Dags Visualization](./docs/dag.png "Dags Visualization")
+
 ## Prerequisites
 
 1. install [UV](https://docs.astral.sh/uv/getting-started/installation/).
